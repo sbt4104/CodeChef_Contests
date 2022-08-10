@@ -38,10 +38,6 @@
                 dp[k][1][1] = max(dp[k-1][0][1], dp[k-1][1][1]) + ((vec[k]+x)^(vec[k-1]+x));
             }
 
-            // for(ll k=1; k<=n; k++) {
-            //     cout<<dp[k][0][0]<<" "<<dp[k][0][1]<<" "<<dp[k][1][0]<<" "<<dp[k][1][1]<<endl;
-            // }
-            //cout<<"n: "<<n<<" x: "<<x<<endl;
             cout<<maxim(dp[n][0][0], dp[n][0][1], dp[n][1][0], dp[n][1][1])<<endl;
         }
         return 0;
